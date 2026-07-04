@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<link rel="stylesheet" href="kkk.css">
+</head>
+<body>
+
+<div class="payment-box">
+
+<h2>Payment Details</h2>
+
+<form id="paymentForm">
+
+<input type="text" placeholder="Card Holder Name" required>
+
+<input type="text" placeholder="Card Number" maxlength="16" required>
+
+<input type="text" placeholder="MM/YY" required>
+
+<input type="password" placeholder="CVV" maxlength="3" required>
+
+<button type="submit">Pay Now</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("paymentForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Payment Successful!");
+
+window.location.href="success.html";
+
+});
+
+</script>
+
+</body>
+</html>
